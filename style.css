@@ -104,8 +104,7 @@ and (max-device-width : 640px) {
   }
   .button button:hover{
     letter-spacing: 1.5px;
-    background-color: black;
-    color: #7bed9f;
+    
   }
   .button button{
     font-size: 11px ;
@@ -117,7 +116,19 @@ and (max-device-width : 640px) {
   }
 }
 
+@media only screen   
+and (min-device-width : 53px)   
+and (max-device-width : 363px){
+  .main{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap; 
+  }
 
+  .poster{
+    margin-bottom: 50px;
+  }
+}
 
 
 
