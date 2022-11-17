@@ -26,6 +26,35 @@ body{
   cursor:pointer;
 }
 
+.image-div{
+  position: relative;
+}
+
+#left{
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  background-color: #4bcffa;
+  border: none;
+  padding: 3px 5px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 7px 0;
+}
+#right{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: auto;
+  background-color: #ff7979;
+  border: none;
+  padding: 3px 5px;
+  font-size: 10px;
+  font-weight:bold;
+  border-radius: 0 7px;
+}
+
 .image-div img:hover{
   filter: grayscale(50%);
 }
