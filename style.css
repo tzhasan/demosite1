@@ -338,7 +338,7 @@ div.navbar {
   left: 50%;
   margin: 0;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 130%;
   color: #ffffff;
 }
 
@@ -349,13 +349,14 @@ div.navbar {
   flex-direction: row;
   align-items: stretch;
   margin: 0 5px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .content2 img {
-  width: 100%;
-  height: 20vw;
+  width: 95%;
+  padding: 6px;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .content2 {
@@ -368,9 +369,9 @@ div.navbar {
 }
 
 .contact-list {
-  padding: 10px 10px 0 10px;
-  margin: 10px;
+  position: relative;
   height: auto;
+  margin: 0 5px;
   background-color: rgba(0, 184, 148, 0.8);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -380,15 +381,27 @@ div.navbar {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.contact-btn {
-  display: flex;
-  margin: 10px auto;
-  justify-content: center;
-  align-items: center;
+
+.contact-btn button{
   background-color: rgba(41, 128, 185, 1);
   color: white;
   border: none;
   border-radius: 20px;
-  padding: 10px;
-  bottom: 0;
+  padding: 8px;
+  bottom: 0px;
+  position: absolute;
+  margin: 0 auto;
+  
+}
+
+.contact-list .des{
+  width: auto;
+  margin-bottom: 20px;
+  border: 1px solid;
+  overflow: hidden;
+}
+
+.content-element .contact-list p:first-child{
+  border: 1px solid red;
+  
 }
