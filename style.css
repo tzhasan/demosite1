@@ -353,6 +353,8 @@ div.navbar {
 }
 
 .content2 img {
+  display: flex;
+  justify-content: center;
   width: 95%;
   padding: 6px;
   border-radius: 10px;
@@ -388,20 +390,33 @@ div.navbar {
   border: none;
   border-radius: 20px;
   padding: 8px;
-  bottom: 0px;
-  position: absolute;
-  margin: 0 auto;
-  
+  text-align: center;
+}
+
+.contact-btn{
+  text-align: center;
 }
 
 .contact-list .des{
   width: auto;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   border: 1px solid;
   overflow: hidden;
 }
 
-.content-element .contact-list p:first-child{
-  border: 1px solid red;
-  
+@media only screen and (max-width: 507px) {
+  .content-element{
+    flex-direction: column;
+  }
+
+  .contact-list{
+    margin-bottom: 20px;
+
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .marwan{
+    font-size: 10px;
+  }
 }
