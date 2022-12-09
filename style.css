@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -11,31 +10,26 @@ body {
   background-attachment: fixed;
   background-position: center;
 }
-
 :root {
   --color-black: black;
   --color-red: red;
   --color-white: white;
   --hover-red: rgba(231, 76, 60, 1);
 }
-
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 5px;
 }
-
 .logo,
 .navbar,
 .btn {
   font-family: "Bebas Neue", cursive;
 }
-
 header a.logo {
   margin-right: auto;
 }
-
 .logo,
 .redweb {
   font-family: "Teko", sans-serif;
@@ -47,17 +41,14 @@ header a.logo {
   text-transform: uppercase;
   padding: 0;
 }
-
 .redweb {
   color: var(--color-red);
   margin: 0;
 }
-
 div.navbar {
   margin: 0;
   padding: 0;
 }
-
 .navbar ul {
   display: flex;
   justify-content: flex-end;
@@ -66,14 +57,12 @@ div.navbar {
   padding: 0;
   margin-top: -2px;
 }
-
 .navbar ul li {
   display: inline-block;
   margin: 0;
   padding: 0;
   position: relative;
 }
-
 .navbar ul li a {
   text-decoration: none;
   color: var(--color-white);
@@ -81,15 +70,19 @@ div.navbar {
   margin-right: 25px;
 }
 
+@media only screen and (max-width: 480px) {
+  .navbar ul li a{
+    font-size: 10px;
+    margin-right: 15px;
+  }
+}
 .navbar .active {
   color: var(--color-red);
 }
-
 .navbar ul li a:hover {
   color: grey;
   transition: 0.3s;
 }
-
 .navbar li::after {
   top: 85%;
   margin: auto;
@@ -103,11 +96,9 @@ div.navbar {
   overflow: hidden;
   transition: 0.5s;
 }
-
 .navbar li:hover::after {
   width: 70%;
 }
-
 .navbar li::before {
   margin: auto;
   display: block;
@@ -121,11 +112,9 @@ div.navbar {
   overflow: hidden;
   transition: 0.3s;
 }
-
 .navbar li:hover::before {
   width: 50%;
 }
-
 .btn {
   margin: 0;
   padding: 0;
@@ -133,26 +122,35 @@ div.navbar {
   margin-right: 10px;
   margin-bottom: 5px;
 }
-
 .btn a {
   text-decoration: none;
   color: var(--color-white);
-  font-size: 18px;
+  font-size: 20px;
   border: 2px solid var(--color-white);
   border-radius: 5px;
   padding: 2px;
 }
-
 .btn a:hover {
   color: grey;
   border: 2px solid grey;
   transition: 0.5s;
 }
-
 @media only screen and (max-width: 480px) {
-  header a.logo,
-  header a.redweb {
+  header a.logo, .redweb{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  header a.logo, .redweb{
+    font-size: 15px;
+  }
+  .btn a {
+    text-decoration: none;
+    color: var(--color-white);
     font-size: 10px;
+    border: 1px solid var(--color-white);
+    border-radius: 3px;
+    padding: 1px;
   }
 }
 
@@ -169,20 +167,17 @@ div.navbar {
   flex-direction: column;
   background-color: rgba(236, 240, 241, 0.3);
 }
-
 .header h1 {
   font-size: 20px;
   color: rgba(44, 62, 80, 1);
   display: flex;
   justify-content: center;
 }
-
 @media only screen and (max-width: 495px) {
   .header h1 {
     font-size: 13px;
   }
 }
-
 .input,
 #check {
   width: 95%;
@@ -195,7 +190,6 @@ div.navbar {
   transform: translateX(8px);
   padding: 0 0 0 10px;
 }
-
 .label-name {
   color: rgba(44, 62, 80, 1);
   margin: 0;
@@ -205,13 +199,11 @@ div.navbar {
   font-weight: bold;
   transform: translateX(8px);
 }
-
 .conteiner .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .button .input-btn {
   width: 95%;
   border-radius: 15px;
@@ -222,11 +214,9 @@ div.navbar {
   margin-top: 10px;
   transition: 0.3s;
 }
-
 .button .input-btn:hover {
   background-color: rgba(22, 160, 133, 0.5);
 }
-
 .bottom {
   display: flex;
   justify-content: space-between;
@@ -235,12 +225,10 @@ div.navbar {
   align-items: center;
   color: rgba(44, 62, 80, 1);
 }
-
 .bottom a {
   text-decoration: none;
   color: rgba(44, 62, 80, 1);
 }
-
 .bottom .checkbox-btn {
   margin: 0;
   padding: 0;
@@ -254,7 +242,6 @@ div.navbar {
     width: 55%;
   }
 }
-
 @media only screen and (max-width: 510px) {
   .bottom {
     font-size: 12px;
@@ -263,11 +250,9 @@ div.navbar {
     width: 55%;
   }
 }
-
 ::-webkit-input-placeholder {
   color: orangered;
 }
-
 .check select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -279,7 +264,6 @@ div.navbar {
   background: red;
   background-image: none;
 }
-
 .content-cover {
   background-color: rgba(41, 128, 185, 0.1);
   width: 100%;
@@ -288,50 +272,41 @@ div.navbar {
   font-family: poppins;
   margin-bottom: 150px;
 }
-
 .content-cover .title {
   display: block;
   text-align: center;
 }
-
 .content-div {
   display: flex;
 }
-
 .cover {
   width: 33%;
   background-color: rgba(41, 128, 185, 0.4);
   margin: 0 10px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   border-radius: 5px;
   height: auto;
   padding: 10px;
 }
-
 .position {
   position: relative;
 }
-
 .cover img {
   width: 95%;
   border-radius: 3px;
 }
-
 .cover:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   transition: 0.3s;
   background-color: rgba(41, 128, 185, 0.6);
 }
-
 .cover img:hover {
   filter: grayscale(60%);
   cursor: pointer;
 }
-
 .middel {
   position: absolute;
   top: 50%;
@@ -345,25 +320,21 @@ div.navbar {
 /*-------------content 2--------------*/
 
 .content-element {
-  
+  font-family: poppins;
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  margin: 0 5px;
+  margin: 0 5px 20px 5px;
   justify-content: space-around;
 }
-
-
-
 .content2 {
   margin-bottom: 150%;
   overflow: hidden;
-  background-color: rgba(0, 184, 148, 0.3);
 }
 .content2 h2 {
   text-align: center;
+  font-size: 30px;
 }
-
 .contact-list {
   position: relative;
   padding: 10px 10px 0 10px;
@@ -372,9 +343,11 @@ div.navbar {
   margin: 0 5px;
   background-color: rgba(0, 184, 148, 0.8);
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+.contact-list:hover {
+  box-shadow: inset 0 0 10px;
+}
 .contact-list img{
   border-radius: 10px;
   width: 100%;
@@ -382,12 +355,6 @@ div.navbar {
   margin: 5px auto;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-
-.contact-list:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-
 .contact-btn button{
   background-color: rgba(41, 128, 185, 1);
   color: white;
@@ -395,39 +362,39 @@ div.navbar {
   border-radius: 20px;
   padding: 8px;
   text-align: center;
+  font-family: poppins;
 }
-
 .contact-btn{
   position: absolute;
   bottom: 8px;
-  right: 50%;
-  
+  left: 50%;
+  transform: translateX(-50%);
 }
-
+.contact-btn button:hover{
+  background-color: rgba(41, 128, 185, 0.7);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
 .contact-list .des{
   width: auto;
   border: 1px solid;
   overflow: hidden;
-  margin: 50px 3px;
+  margin:0 2px 70px 2px;
 }
-
 @media only screen and (max-width: 690px) {
   .content-element{
     flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-
   .contact-list{
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
-
   .contact-btn{
     margin-bottom: 10px;
   }
 }
 
-@media only screen and (max-width: 586px) {
-  
-}
 
 
 
