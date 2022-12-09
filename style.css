@@ -345,6 +345,7 @@ div.navbar {
 /*-------------content 2--------------*/
 
 .content-element {
+  
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -352,14 +353,7 @@ div.navbar {
   justify-content: space-around;
 }
 
-.content2 img {
-  display: flex;
-  justify-content: center;
-  width: 95%;
-  padding: 6px;
-  border-radius: 10px;
-  margin: 0 auto;
-}
+
 
 .content2 {
   margin-bottom: 150%;
@@ -372,11 +366,21 @@ div.navbar {
 
 .contact-list {
   position: relative;
+  padding: 10px 10px 0 10px;
+  width: 90%;
   height: auto;
   margin: 0 5px;
   background-color: rgba(0, 184, 148, 0.8);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.contact-list img{
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  margin: 5px auto;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .contact-list:hover {
@@ -394,29 +398,36 @@ div.navbar {
 }
 
 .contact-btn{
-  text-align: center;
+  position: absolute;
+  bottom: 8px;
+  right: 50%;
+  
 }
 
 .contact-list .des{
   width: auto;
-  margin-bottom: 60px;
   border: 1px solid;
   overflow: hidden;
+  margin: 50px 3px;
 }
 
-@media only screen and (max-width: 507px) {
+@media only screen and (max-width: 690px) {
   .content-element{
     flex-direction: column;
   }
 
   .contact-list{
     margin-bottom: 20px;
+  }
 
+  .contact-btn{
+    margin-bottom: 10px;
   }
 }
 
 @media only screen and (max-width: 586px) {
-  .marwan{
-    font-size: 10px;
-  }
+  
 }
+
+
+
